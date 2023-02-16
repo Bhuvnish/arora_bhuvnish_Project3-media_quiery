@@ -5,7 +5,7 @@ body {
     text-align: center;
   }
   
-  h1,h2{
+  h2{
     font-size: 28px;
   } 
 
@@ -14,49 +14,61 @@ body {
     max-width: 1200px;
    
   }
+  #column-con {
+    display: flex;
+    flex-direction: column;
+}
+
 
 #column1 {
-    background-color: blue;
+    background-color: pink;
    
     height: 150px;
 }
 
 #column2 {
-    background-color: purple;
-   
+    background-color: red;
+ 
     height: 150px;
 }
-#column3 {
-    background-color: grey;
-    
-    height: 150px;
-}
-#column4 {
-    background-color: brown;
-    
-    height: 150px;
-}
+
+
 @media screen and (min-width:641px) {
     
-    #boxes {
+    
+    #column-con {
         display: flex;
+        flex-direction: row;
     }
     #column1{
         width: 25%;
+        background-color: rgb(122, 122, 217);
+        height: 150px;
+      
     }
     #column2 {
-        background-color: blueviolet;
+        background-color: purple;
         color: aliceblue;
         width: 25%;
+        height: 150px;
+
     }
     #column3{
+        background-color: grey;
         width: 25%;
+        height: 150px;
+       
+       
     }
     #column4{
         width: 25%;
+        background-color: brown;
+        height: 150px;
+       
     }
     
 }
+
 
 
   
